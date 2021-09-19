@@ -14,4 +14,6 @@ urlpatterns = [
     path('v1/', include('djoser.urls')),
     path('v1/', include('djoser.urls.jwt')),
     path('v1/follow/', views.FollowView.as_view()),
+    # Насколько я понял, в роутер можно только вьюсет зарегестрировать,
+    # а FollowView у меня дженерик.
 ]
